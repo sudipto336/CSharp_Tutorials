@@ -1,0 +1,3 @@
+If a class contains methods/properties which are not related each other - obj should not be created - so OOPS principles cant be applied to that class - so it is fixed/static class with fixed behaviors (behaviors cant be changed using oops principles)
+
+this type of class should be declared as static

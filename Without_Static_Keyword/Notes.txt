@@ -1,0 +1,1 @@
+If a method is used only inside other methods of class not outside the class then it should not be visible to consumer of this class (private) acc to oops principle (abstraction - only show necessary things)
