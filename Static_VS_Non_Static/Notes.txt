@@ -1,0 +1,37 @@
+For accessing or initializing static members, object creation is not required
+
+For accessing or initializing non static members, object nneds to be created
+
+variables inside static block (or method) are static by default
+
+static variable holds same value across all instances of class - it can be used to store application level data which is shared and same across all instances
+
+static variable gets intiallized only once during app life time when the class starts executing
+
+non static variable of a class gets initialized everytime time when new obj of the class is created
+
+static variable can be used directly if accessed inside the class or using class name if accessed outside the class
+
+non static variable can be accessed only through obj of the class
+
+non static members cant be accessed directly inside static block (method), they can be accessed using the obj of the class
+
+static members can be accessed directly inside static block (method) or using class name if accessed inside another static block outside the ckass
+
+static members can be accessed directly inside a non static block (method) or using class name if accessed inside another non static block outside the ckass
+
+non static members can be accessed inside a non static block (method) directly or using this
+
+static constr gets executed first even if before main() and executed only once
+
+non static constr gets executed every time new obj is created
+
+static contsr cant have params as it gets executed first and implicitly, so there is no chance for sending the param value
+
+static class contains only static members 
+
+instance of static class cant be created because static class contains only static members and they can be accessed directly or class name, instance is not reqd
+
+non static variables get created every time when new obj is created and gets destroyed when obj is destroyed (obj can be destroyed by assigning null to ref variable or ref variable is destroyed - so scope of obj is scope of reference variable)
+
+scope of static variable is scope of app - when app execution starts, static variable gets created and holds data until app stops execution (static variable gets deleted when app stops)
