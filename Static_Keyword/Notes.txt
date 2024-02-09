@@ -6,4 +6,4 @@ Obj of static class cant be created using new
 
 When static class is instantiated, then only static members of the class gets stored in memory, then only they can be accessed - so to access static class members, the class needs to be instantiated 
 
-Once the static class execution starts (accessed by client 1st time), then CLR creates 1 single instance of the class which is shared between all consumers - so static members can be used to share common data acroos all clients
+Once the static class execution starts (accessed/consumed by client 1st time), then CLR creates 1 single instance of the class which is shared between all consumers - so static members can be used to share common data acroos all clients
