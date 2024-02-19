@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             FuncDemo.PrintFuncOutput();
+            ActionDemo.PrintActionOutput();
         }
     }
 }
