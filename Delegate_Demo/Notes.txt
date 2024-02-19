@@ -11,3 +11,10 @@ Action <int, double> -> void fn (int x, double y)
 - takes 0 to 16 input params and 0 output param
 - does not return any value
 - points to only method with void return type
+
+Predicate <int> -> bool fn (int x)
+
+- built in delegate
+- takes 1 input param and 0 output param
+- returns a boolean value
+- pointing method returns true if input param satisfies specified condition else returns false
