@@ -6,6 +6,7 @@
         {
             FuncDemo.PrintFuncOutput();
             ActionDemo.PrintActionOutput();
+            PredicateDemo.PrintPredicateOutput();  
         }
     }
 }
