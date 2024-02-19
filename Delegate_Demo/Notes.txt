@@ -1,0 +1,5 @@
+Func<int, double, string> -> string fn(int x, double y)
+
+- built in delegate
+- takes 0 to 16 input params and 1 output param
+- must return a value
