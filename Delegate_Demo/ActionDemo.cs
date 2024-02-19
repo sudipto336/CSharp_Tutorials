@@ -8,18 +8,18 @@ namespace Delegate_Demo
 {
     internal static class ActionDemo
     {
-        public delegate void UserDefinedActionDelegate(int a, int b);
+        private delegate void UserDefinedActionDelegate(int a, int b);
 
         private static void Sum(int x, int y)
         {
             int sumResult = x + y;
-            Console.WriteLine($"Sum result (using user defined Action): {sumResult}");
+            Console.WriteLine($"Sum result (using Action): {sumResult}");
         }
 
         private static void Divide(int x, int y)
         {
             int divisionResult = x / y;
-            Console.WriteLine($"Division result (using Action): {divisionResult}");
+            Console.WriteLine($"Division result (using user defined Action): {divisionResult}");
         }
 
         public static void PrintActionOutput()
@@ -27,6 +27,7 @@ namespace Delegate_Demo
             Action<int, int> add = Sum;
 
             UserDefinedActionDelegate userDefinedActionDelegate = Divide;
+
             //using anonymous method
             Action getRandomNumber = delegate ()
             {
