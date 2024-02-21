@@ -1,0 +1,7 @@
+Event - wraps a delegate
+
+Built in delegate - EventHandler or EventHandler<Data_Type>
+
+Publisher - raises event 
+
+Subscriber - handle raised event
