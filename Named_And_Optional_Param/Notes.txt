@@ -1,0 +1,7 @@
+While calling method we need to pass args for all required params but can pass/omit args for optional param
+
+Optional param can be created by passing default value in fn defn
+
+Named param is used to map arg to param name by passing param value along with arg value while calling method - useful if method contains huge no. of params or different data types of params
+
+Using named param, arg can be passed in any order
