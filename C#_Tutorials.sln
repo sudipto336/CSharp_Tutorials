@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Without_Static_Keyword_Foll
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Static_VS_Non_Static", "Static_VS_Non_Static\Static_VS_Non_Static.csproj", "{0A2EF529-AB2A-4978-B1E9-A66FAEBF072E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate_Demo", "Delegate_Demo\Delegate_Demo.csproj", "{01D083B4-25B2-4B3E-8F21-5A4342E4A39D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate_Demo", "Delegate_Demo\Delegate_Demo.csproj", "{01D083B4-25B2-4B3E-8F21-5A4342E4A39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event_Demo", "Event_Demo\Event_Demo.csproj", "{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{01D083B4-25B2-4B3E-8F21-5A4342E4A39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D083B4-25B2-4B3E-8F21-5A4342E4A39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D083B4-25B2-4B3E-8F21-5A4342E4A39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
