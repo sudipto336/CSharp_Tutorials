@@ -1,0 +1,7 @@
+records - immutable reference type which behaves as value type - useful to create new instance from existing instance and changing value of any property dunamically (using with) 
+
+creating new class instance from existing instance by assigning each property value and change some property value, is very cumbersome if there are large no. of properties - records makes it easier using with keyword
+
+record provides value based equality checking - if 2 record instance contains same props values then they will be equal and Equals() returns true
+
+class provides reference based equality checking - even though 2 class instance contains same props values then they will not be equal and Equals() returns false as those instance are present in 2 different memory locations

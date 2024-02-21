@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event_Demo", "Event_Demo\Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Named_And_Optional_Param", "Named_And_Optional_Param\Named_And_Optional_Param.csproj", "{437E7161-88AD-414B-BF21-9D0744787C0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record_Demo", "Record_Demo\Record_Demo.csproj", "{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{437E7161-88AD-414B-BF21-9D0744787C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437E7161-88AD-414B-BF21-9D0744787C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437E7161-88AD-414B-BF21-9D0744787C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
