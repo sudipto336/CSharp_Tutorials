@@ -1,6 +1,6 @@
 For accessing or initializing static members, object creation is not required
 
-For accessing or initializing non static members, object nneds to be created
+For accessing or initializing non-static members, object needs to be created
 
 variables inside static block (or method) are static by default
 
