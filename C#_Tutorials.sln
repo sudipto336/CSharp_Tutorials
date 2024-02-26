@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate_Demo", "Delegate_D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event_Demo", "Event_Demo\Event_Demo.csproj", "{1BA5BA87-CDD7-4C27-A2C9-1B2D1F66F4CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Named_And_Optional_Param", "Named_And_Optional_Param\Named_And_Optional_Param.csproj", "{437E7161-88AD-414B-BF21-9D0744787C0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Named_And_Optional_Param", "Named_And_Optional_Param\Named_And_Optional_Param.csproj", "{437E7161-88AD-414B-BF21-9D0744787C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record_Demo", "Record_Demo\Record_Demo.csproj", "{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Record_Demo", "Record_Demo\Record_Demo.csproj", "{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexer_Demo", "Indexer_Demo\Indexer_Demo.csproj", "{B0C47B70-A27A-4285-83C3-0F941CD9BB46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A11943C0-5CEA-4C4F-A644-73C6CD35A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C47B70-A27A-4285-83C3-0F941CD9BB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C47B70-A27A-4285-83C3-0F941CD9BB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C47B70-A27A-4285-83C3-0F941CD9BB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C47B70-A27A-4285-83C3-0F941CD9BB46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
