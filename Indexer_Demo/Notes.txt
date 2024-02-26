@@ -1,0 +1,1 @@
+Indexer allows any class instance to be accessed like array element to access any internal collection which is present inside the class (like getting/setting values of elements of the collection)
