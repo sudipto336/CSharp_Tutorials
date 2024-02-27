@@ -1,0 +1,3 @@
+Extension methods are additional methods which are not originally included with class
+
+This methods can be added to any class without modifying/inheriting the class
