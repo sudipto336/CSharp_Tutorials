@@ -11,7 +11,7 @@
 
             //1st way
 
-            Thread thread1 = new Thread(BasicThreadFn);
+            Thread thread1 = new Thread(BasicThreadFn1);
 
             //2nd way
 
@@ -35,8 +35,18 @@
 
             Thread thread4 = new Thread(threadStart3);
 
-            
-            
+            //Passing data to thread fn in type safe manner with callback
+
+            CallbackDelegate callbackDelegate = new CallbackDelegate(BasicThreadFn3);
+
+            NumberHelperWithCallback numberHelperWithCallback = new NumberHelperWithCallback(7, callbackDelegate);
+
+            ThreadStart threadStart4 = new ThreadStart(numberHelperWithCallback.TypeSafeThreadFn);
+
+            Thread thread5 = new Thread(threadStart4);
+
+
+
             //starting thread execution - making thread state as Running
 
             thread1.Start();
@@ -50,11 +60,15 @@
             //data passed type safely
 
             thread4.Start();
+
+            //data passed type safely along with callback fn
+
+            thread5.Start();
         }
 
-        static void BasicThreadFn() { Console.WriteLine("Thread1 fn executed"); }
+        static void BasicThreadFn1() { Console.WriteLine("BasicThreadFn1 fn executed"); }
 
-        static void BasicThreadFn2() { Console.WriteLine("Thread2 fn executed"); }
+        static void BasicThreadFn2() { Console.WriteLine("BasicThreadFn2 fn executed"); }
 
         static void NotTypeSafeParameterizedThreadFn(Object num)
         {
@@ -63,5 +77,7 @@
             int param = Convert.ToInt32(num);
             Console.WriteLine($"Not type safe parameterized thread fn executed with param {param}");
         }
+
+        static void BasicThreadFn3(int num) { Console.WriteLine($"BasicThreadFn3 executed with param {num}"); }
     }
 }
