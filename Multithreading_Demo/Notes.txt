@@ -1,0 +1,20 @@
+IsAlive - returns current execution status of thread - returns true if the thread is started normally and not terminated normally or aborted i.e if the thread is still running, else it returns false
+
+Join() 
+
+- blocks currrently running thread and make it wait until the child thread on which Join() invoked completes its execution (terminates)
+- blocks calling thread and calling (parent) thread until the child thread completes its execution
+- Join() without any arg makes calling thread to wait for infinite time until the child thread (on which Join() invoked) completes its execution
+
+Join(int timeout (in milliSeconds)) 
+
+- blocks currrently running thread and make it wait until the child thread on which Join() invoked completes its execution (terminates) or specified time elapsed
+- calling thread will wait for speified time for completeion of child thread execution (thread termination)
+- returns true if child thread execution completed (terminated) within specified time
+- returns false if child thread execution not completed (terminated) after specified time
+- timeout is no. of millisecond for which calling thread needs to wait for child thread to terminate
+
+Join(TimeSpan timeout) 
+
+- same as Join(int timeout (in milliSeconds))
+- timeout is amount of time (in TimeSpan) for which calling thread needs to wait for child thread to terminate
