@@ -12,7 +12,7 @@ Join(int timeout (in milliSeconds))
 - calling thread will wait for speified time for completeion of child thread execution (thread termination)
 - returns true if child thread execution completed (terminated) within specified time
 - returns false if child thread execution not completed (terminated) after specified time
-- timeout is no. of millisecond for which calling thread needs to wait for child thread to terminate
+- timeout is no. of milliseconds for which calling thread needs to wait for child thread to terminate
 
 Join(TimeSpan timeout) 
 
