@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Main thread started");
+
             //Thread method with no param
 
             //Creating thread instance 
@@ -64,6 +66,62 @@
             //data passed type safely along with callback fn
 
             thread5.Start();
+
+            Thread threadForMethod1 = new Thread(Method1);
+            Thread threadForMethod2 = new Thread(Method2);
+            Thread threadForMethod3 = new Thread(Method3);
+
+            threadForMethod1.Start();
+            threadForMethod2.Start();
+            threadForMethod3.Start();
+
+            threadForMethod1.Join();
+            //threadForMethod2.Join();
+            //threadForMethod3.Join();
+
+            if (threadForMethod2.Join(TimeSpan.FromSeconds(3)))
+            {
+                Console.WriteLine("threadForMethod2 execution completed in 3 sec");
+            } else
+            {
+                Console.WriteLine("threadForMethod2 execution not completed in 3 sec");
+            }
+
+            if (threadForMethod3.Join(3000))
+            {
+                Console.WriteLine("threadForMethod3 execution completed in 3 sec");
+            }
+            else
+            {
+                Console.WriteLine("threadForMethod3 execution not completed in 3 sec");
+            }
+
+            Thread threadForMethod4 = new Thread(Method4);
+
+            threadForMethod4.Start();
+
+            if (threadForMethod4.IsAlive)
+            {
+                Console.WriteLine("threadForMethod4 is still running");
+            } else
+            {
+                Console.WriteLine("threadForMethod4 execution ended");
+            }
+
+            threadForMethod4.Join();
+
+            if (threadForMethod4.IsAlive)
+            {
+                Console.WriteLine("threadForMethod4 is still running");
+            }
+            else
+            {
+                Console.WriteLine("threadForMethod4 execution ended");
+            }
+
+            Console.WriteLine("Main thread ended");
+
+            Console.Read();
         }
 
         static void BasicThreadFn1() { Console.WriteLine("BasicThreadFn1 fn executed"); }
@@ -79,5 +137,32 @@
         }
 
         static void BasicThreadFn3(int num) { Console.WriteLine($"BasicThreadFn3 executed with param {num}"); }
+
+        static void Method1() { 
+            Console.WriteLine("Thread for Method1 started");
+            Thread.Sleep(000);
+            Console.WriteLine("Thread for Method1 ended");
+        }
+
+        static void Method2()
+        {
+            Console.WriteLine("Thread for Method2 started");
+            Thread.Sleep(2000);
+            Console.WriteLine("Thread for Method2 ended");
+        }
+
+        static void Method3()
+        {
+            Console.WriteLine("Thread for Method3 started");
+            Thread.Sleep(5000);
+            Console.WriteLine("Thread for Method3 ended");
+        }
+
+        static void Method4()
+        {
+            Console.WriteLine("Thread for Method4 started");
+            Thread.Sleep(TimeSpan.FromSeconds(3));
+            Console.WriteLine("Thread for Method4 ended");
+        }
     }
 }
