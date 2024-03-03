@@ -18,3 +18,43 @@ Join(TimeSpan timeout)
 
 - same as Join(int timeout (in milliSeconds))
 - timeout is amount of time (in TimeSpan) for which calling thread needs to wait for child thread to terminate
+
+
+If mutiple threads want to access a shared resource (critical code) at same time and the shared resource is not pretected from concurrent access, then output becomes incosistent
+
+Thread synchronization is the process to ensure only 1 thread can access a shared resource (critical code) at any point of time, others thread which want to access that resource needs to wait until that thread completes execution
+
+Using thread synchronization, multiple threads can not access a shared resource at same time, so it restricts multuple threads to access a shared resource atr same time
+
+Using thread synchronization, a shared resource can be protected from concurrent access, it provides thread safety to any shared resource to prevent concurrent access
+
+Thread synchronization provides
+
+atomicity - only 1 thread can access a shared resource atomically at a time
+
+ordering - multiple thread can perform a task in particular order
+
+
+Thread synchronization can be achieved using 
+
+- Lock
+- Monitor
+- Mutex
+- Semaphore
+- SemaphoreSlim
+
+Using lock, at any point of time, only 1 thread which gets the lock on a critical block of code within a locked object, can access that block of code, other threads need to wait until the thread releases the lock
+
+lock statement locks access to shared resource in a locked obj
+
+lock statement uses try-finally internally - uses Monitor.Enter() in try (to get lock) and Monitor.Exit() in finally (to release lock)
+
+using lock, any shared resource (critical block of code present in a locked obj) can be locked from consurrent access to prevent concurrrent access to the shared resource by multiple threads at same time
+
+deadlock can happen if same lock obj used to lock different shared resources
+
+Type of locks - 
+
+exclusive lock - only 1 thread which acquires a lock on a shared resource, can access that resource, other threads need to wait until the thread releases the lock - can be achieved using lock, moitor, mutex
+
+non-exclusive lock - provides read only acess to a shared resource and limit no. of concurrent access to a shared resource -  can be achieved using Semaphore, SemaphoreSlim
