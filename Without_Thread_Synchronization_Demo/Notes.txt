@@ -1,0 +1,3 @@
+In a mulithreaded environment, if multiple threads try to access a shared resource at same time, then output becomes incosistent
+
+To protect a shared resource from concurrent access, thread synchronization required 
