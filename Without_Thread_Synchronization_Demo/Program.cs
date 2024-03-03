@@ -36,7 +36,7 @@
 
         static void SomeMethod()
         {
-            Console.WriteLine("[SomeMethod stated. ");
+            Console.Write("[SomeMethod stated. ");
             Thread.Sleep(1000);
             Console.WriteLine("SomeMethod ended]");
         }
