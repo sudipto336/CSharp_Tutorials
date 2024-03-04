@@ -21,11 +21,11 @@ Thread synchronization can be achieved using
 - Semaphore
 - SemaphoreSlim
 
-Using lock, at any point of time, only 1 thread which gets the lock on a critical block of code within a locked object, can access that block of code, other threads need to wait until the thread releases the lock
+Using lock, at any point of time, only 1 thread which acquires the lock on a critical block of code within a locked object, can access that block of code, other threads need to wait until the thread releases the lock
 
 lock statement locks access to shared resource in a locked obj
 
-lock statement uses try-finally internally - uses Monitor.Enter() in try (to acquire a exclusive lock) and Monitor.Exit() in finally (to release the lock)
+lock statement uses try-finally internally - uses Monitor.Enter() in try (to acquire a exclusive lock on an obj) and Monitor.Exit() in finally (to release the lock)
 
 using lock, any shared resource (critical block of code present in a locked obj) can be locked from consurrent access to prevent concurrrent access to the shared resource by multiple threads at same time
 
